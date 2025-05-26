@@ -32,6 +32,7 @@ print("SID:", os.getenv("TWILIO_ACCOUNT_SID"))
 print("TOKEN:", os.getenv("TWILIO_AUTH_TOKEN"))
 print("PHONE:", os.getenv("TWILIO_PHONE_NUMBER"))
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = [
     'adaniotp.onrender.com',
