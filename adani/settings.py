@@ -28,9 +28,7 @@ SECRET_KEY = 'django-insecure-jdv^+j%10=jp3_(%&me7xoi$8%xv&dfjl0jpan!mcayaq9orb0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-print("SID:", os.getenv("TWILIO_ACCOUNT_SID"))
-print("TOKEN:", os.getenv("TWILIO_AUTH_TOKEN"))
-print("PHONE:", os.getenv("TWILIO_PHONE_NUMBER"))
+
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
