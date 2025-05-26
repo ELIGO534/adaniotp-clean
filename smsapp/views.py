@@ -5,6 +5,7 @@ from django.conf import settings
 from twilio.rest import Client
 
 import random
+import json
 
 @csrf_exempt
 def send_otp(request):
@@ -29,6 +30,7 @@ def send_otp(request):
         )
         return JsonResponse({"status": "success", "message_sid": message.sid})
     except Exception as e:
+        logger.error(f"Error in send_otp: {str(e)}")
         return JsonResponse({"error": str(e)}, status=500)
 
 @csrf_exempt
