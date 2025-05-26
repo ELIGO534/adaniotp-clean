@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-jdv^+j%10=jp3_(%&me7xoi$8%xv&dfjl0jpan!mcayaq9orb0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']  # or use your render domain later
+ALLOWED_HOSTS = ['adaniotp.onrender.com','127.0.0.1:8000/sms/send-otp/','127.0.0.1:8000']  # or use your render domain later
 
 # Static files settings for Render
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
