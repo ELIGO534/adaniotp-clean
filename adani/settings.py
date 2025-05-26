@@ -36,9 +36,16 @@ ALLOWED_HOSTS = [
     'adaniotp.onrender.com',
     '127.0.0.1',
     'localhost',
-    "http://localhost:5173",
+    
 ]
  # or use your render domain later
+ CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # React dev server
+]
+
+
+ CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Static files settings for Render
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
